@@ -16,7 +16,7 @@ stage 'Simple Test'
 
 stage 'STG-Deploy'
  node () {
-  sh 'curl -Xpost [Webhook]'
+  sh 'curl -Xpost https://nerdsociety.com.br'
  }
 
 stage 'STG-Check'
