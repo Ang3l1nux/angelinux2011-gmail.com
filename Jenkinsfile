@@ -3,7 +3,10 @@ stage 'Checkout'
   deleteDir()
   checkout scm
  }
-
+stage 'Simple Test'
+  node () {
+    sh 'grep FREEHTML5 index.html'
+  }
 // stage 'slack notification'
 //  node () {
 //   sh 'git log -1 --pretty=%B > commit-log.txt'                 
