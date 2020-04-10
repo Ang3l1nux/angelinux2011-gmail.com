@@ -16,7 +16,7 @@ stage 'Simple Test'
 
 stage 'STG-Deploy'
  node () {
-  openshiftBuild(buildConfig: 'frontend', showBuildLogs: 'true') 
+  sh 'curl -Xpost [Webhook]'
  }
 
 stage 'STG-Check'
